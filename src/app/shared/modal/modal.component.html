@@ -1,0 +1,22 @@
+<div class="mmodal">
+  <div class="mmodal-body" [style]="tamanho">
+    <ng-content select="[header]"></ng-content>
+
+    <hr>
+    <div class="mmodal-header">
+      <ng-content select="[content]"></ng-content>
+    </div>
+
+    <div class="mmodal-button">
+      <button *ngFor="let item of keys">{{labels[item]}}</button>
+
+
+      <ng-content select="[button]"></ng-content>
+      <ng-content select="[button2]"></ng-content>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="mmodal-background"></div>
