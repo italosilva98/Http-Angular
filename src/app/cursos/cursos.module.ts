@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CursosListaComponent } from './cursos-lista/cursos-lista.component';
 import { CursosRoutingModule } from './cursos-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { CursosFormComponent } from './cursos-form/cursos-form.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { SharedModule } from '../shared/shared.module';
     ReactiveFormsModule,
     SharedModule
   ],
-  declarations: [CursosListaComponent]
+  declarations: [CursosListaComponent, CursosFormComponent]
 })
 export class CursosModule { }

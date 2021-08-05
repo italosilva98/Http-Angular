@@ -20,8 +20,8 @@ export class AppComponent {
   showDialog() {
     let view = this.modal_1.createEmbeddedView(null);
     this.vc.insert(view)
-    this.modal_1.elementRef.nativeElement.previousElementSibling.classList.remove('hhidden');
-    this.modal_1.elementRef.nativeElement.previousElementSibling.classList.add('sshow');
+    this.modal_1.elementRef.nativeElement.previousElementSibling.classList.remove('modal-hidden');
+    this.modal_1.elementRef.nativeElement.previousElementSibling.classList.add('modal-show');
   }
 
   closeDialog() {

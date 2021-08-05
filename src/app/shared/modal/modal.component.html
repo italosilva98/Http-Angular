@@ -1,22 +1,16 @@
 <div class="mmodal">
-  <div class="mmodal-body" [style]="tamanho">
-    <ng-content select="[header]"></ng-content>
-
-    <hr>
-    <div class="mmodal-header">
+  <div class="modal-content" [style]="tamanho">
+    <div class="modal-header">
+      <ng-content select="[header]"></ng-content>
+    </div>
+    <div class="modal-body">
       <ng-content select="[content]"></ng-content>
     </div>
-
-    <div class="mmodal-button">
-      <button *ngFor="let item of keys">{{labels[item]}}</button>
-
-
+    <div class="modal-button">
       <ng-content select="[button]"></ng-content>
       <ng-content select="[button2]"></ng-content>
     </div>
-
-
   </div>
 </div>
 
-<div class="mmodal-background"></div>
+<div class="modal-background"></div>

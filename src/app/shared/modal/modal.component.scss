@@ -1,10 +1,10 @@
 // this makes the .modal visible
-.sshow {
+.modal-show {
   display: block;
 }
 
 // this makes the element hidden/invisible
-.hhidden {
+.modal-hidden {
   display: none;
 }
 
@@ -19,24 +19,29 @@
   transform: translate(-50%, -50%);
 }
 
-.mmodal-body {
+.modal-content {
   background: #fff;
-  margin: 40px;
+  // margin: 40px;
   padding: 20px;
   border-radius: 5px;
 }
 
-.mmodal-header {
-  margin-top: 30px;
+.modal-header {
+  // margin-top: 20px;
 }
 
-.mmodal-button {
-  margin-top: 30px;
+.modal-body {
+  // margin-top: 30px;
+
+}
+
+.modal-button {
+  // margin-top: 30px;
 }
 
 // backdrop color
 
-.mmodal-background {
+.modal-background {
   // show be below the .modal but above all other elements
   z-index: 900 !important;
   position: fixed;

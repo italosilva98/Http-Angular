@@ -16,24 +16,24 @@
       <li class="nav-item">
         <a class="nav-link" routerLinkActive="active" [routerLink]="['/rxjs-poc']">RxJS POC</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/upload']">Upload Arquivo</a>
+      </li>
     </ul>
   </div>
 </nav>
 
 <div class="container">
   <router-outlet></router-outlet>
+</div>
 
-
-  <ng-container #vc></ng-container>
-
-  <button (click)="showDialog()">Open Dialog</button>
-
-
-  <ng-template #modal_1>
-    <app-modal id="modal_1" class="hhidden" width="auto" height="auto"
-      [buttons]="buttons">
+<ng-container #vc></ng-container>
+<button (click)="showDialog()">Open Dialog</button>
+<ng-template #modal_1>
+    <app-modal id="modal_1" class="modal-hidden" width="auto" height="auto"
+      >
       <h1 header> HEADER</h1>
-      <h4 content>
+      <div content>
         <ul class="list-group list-group-horizontal">
           <li class="list-group-item">An item</li>
           <li class="list-group-item">A second item</li>
@@ -59,8 +59,12 @@
           <li class="list-group-item">A second item</li>
           <li class="list-group-item">A third item</li>
         </ul>
-      </h4>
-      <button button (click)="closeDialog()">Close Dialog</button>
+      </div>
+
+      <div class="position-button" button>
+        <button  type="button" class="btn btn-secondary"  (click)="closeDialog()">Close Dialog</button>
+        <button  type="button" class="btn btn-primary"  (click)="closeDialog()">salvar</button>
+      </div>
+
     </app-modal>
   </ng-template>
-</div>
